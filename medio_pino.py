@@ -1,16 +1,17 @@
-def medio_pino(niveles) :
+def medio_pino(niveles):
     nivelesReal = niveles + 1
-    
-    if nivelesReal > 0 and nivelesReal <= 151 : 
-        for i in range(1, nivelesReal) :
-                    
-            if i > 1 :
-                for j in range(1, i) :
+
+    if nivelesReal > 0 and nivelesReal <= 151:
+        for i in range(1, nivelesReal):
+
+            if i > 1:
+                for j in range(1, i):
                     print("x", end="")
-                    
+
             print("x")
-    else :
+    else:
         print("El ejercicio solo permite numeros entre '1' y el '150'")
+
 
 print("Programa para crear medio pino")
 niveles = int(input("Ingresa los niveles para el medio pino: "))
